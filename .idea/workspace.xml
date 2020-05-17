@@ -2,15 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4a391036-9702-4c76-b700-36016945f8c4" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/guru/springframework/msscbeerservice/config/CacheConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/ehcache.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/guru/springframework/msscbeerservice/web/controller/BeerUpcController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/guru/springframework/msscbeerservice/domain/Beer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/guru/springframework/msscbeerservice/domain/Beer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/guru/springframework/msscbeerservice/repositories/BeerRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/guru/springframework/msscbeerservice/repositories/BeerRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/guru/springframework/msscbeerservice/services/BeerService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/guru/springframework/msscbeerservice/services/BeerService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/guru/springframework/msscbeerservice/services/BeerServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/guru/springframework/msscbeerservice/services/BeerServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/guru/springframework/msscbeerservice/web/model/BeerDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/guru/springframework/msscbeerservice/web/model/BeerDto.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/guru/springframework/msscbeerservice/web/model/BeerPagedList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/guru/springframework/msscbeerservice/web/model/BeerPagedList.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/guru/springframework/msscbeerservice/web/controller/BeerController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/guru/springframework/msscbeerservice/web/controller/BeerController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/ehcache.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/ehcache.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -179,7 +178,14 @@
       <option name="project" value="LOCAL" />
       <updated>1589718358055</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="add cache to getBeerById and getBeerList">
+      <created>1589719630133</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1589719630133</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -189,7 +195,8 @@
     <MESSAGE value="comn with inventory service to get qty on hand" />
     <MESSAGE value="fix git ignore" />
     <MESSAGE value="query param to add inventory on hand" />
-    <option name="LAST_COMMIT_MESSAGE" value="query param to add inventory on hand" />
+    <MESSAGE value="add cache to getBeerById and getBeerList" />
+    <option name="LAST_COMMIT_MESSAGE" value="add cache to getBeerById and getBeerList" />
   </component>
   <component name="WindowStateProjectService">
     <state x="688" y="250" key="#com.intellij.ide.util.MemberChooser" timestamp="1589717533120">
@@ -200,35 +207,35 @@
       <screen x="71" y="23" width="1609" height="1027" />
     </state>
     <state x="389" y="23" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/1680.23.1920.1057/71.23.1609.1027@71.23.1609.1027" timestamp="1589718260096" />
-    <state x="416" y="132" key="CommitChangelistDialog2" timestamp="1589718357916">
+    <state x="416" y="132" key="CommitChangelistDialog2" timestamp="1589719630018">
       <screen x="71" y="23" width="1609" height="1027" />
     </state>
-    <state x="416" y="132" key="CommitChangelistDialog2/1680.23.1920.1057/71.23.1609.1027@71.23.1609.1027" timestamp="1589718357916" />
+    <state x="416" y="132" key="CommitChangelistDialog2/1680.23.1920.1057/71.23.1609.1027@71.23.1609.1027" timestamp="1589719630018" />
     <state x="416" y="132" key="CommitChangelistDialog2/71.23.1609.1027@71.23.1609.1027" timestamp="1589705318683" />
-    <state width="1567" height="288" key="GridCell.Tab.0.bottom" timestamp="1589719346891">
+    <state width="1567" height="317" key="GridCell.Tab.0.bottom" timestamp="1589720491713">
       <screen x="71" y="23" width="1609" height="1027" />
     </state>
-    <state width="1567" height="288" key="GridCell.Tab.0.bottom/1680.23.1920.1057/71.23.1609.1027@71.23.1609.1027" timestamp="1589719346891" />
+    <state width="1567" height="317" key="GridCell.Tab.0.bottom/1680.23.1920.1057/71.23.1609.1027@71.23.1609.1027" timestamp="1589720491713" />
     <state width="1567" height="408" key="GridCell.Tab.0.bottom/71.23.1609.1027@71.23.1609.1027" timestamp="1589705237112" />
-    <state width="1567" height="288" key="GridCell.Tab.0.center" timestamp="1589719346889">
+    <state width="1567" height="317" key="GridCell.Tab.0.center" timestamp="1589720491712">
       <screen x="71" y="23" width="1609" height="1027" />
     </state>
-    <state width="1567" height="288" key="GridCell.Tab.0.center/1680.23.1920.1057/71.23.1609.1027@71.23.1609.1027" timestamp="1589719346889" />
+    <state width="1567" height="317" key="GridCell.Tab.0.center/1680.23.1920.1057/71.23.1609.1027@71.23.1609.1027" timestamp="1589720491712" />
     <state width="1567" height="408" key="GridCell.Tab.0.center/71.23.1609.1027@71.23.1609.1027" timestamp="1589705237111" />
-    <state width="1567" height="288" key="GridCell.Tab.0.left" timestamp="1589719346889">
+    <state width="1567" height="317" key="GridCell.Tab.0.left" timestamp="1589720491712">
       <screen x="71" y="23" width="1609" height="1027" />
     </state>
-    <state width="1567" height="288" key="GridCell.Tab.0.left/1680.23.1920.1057/71.23.1609.1027@71.23.1609.1027" timestamp="1589719346889" />
+    <state width="1567" height="317" key="GridCell.Tab.0.left/1680.23.1920.1057/71.23.1609.1027@71.23.1609.1027" timestamp="1589720491712" />
     <state width="1567" height="408" key="GridCell.Tab.0.left/71.23.1609.1027@71.23.1609.1027" timestamp="1589705237111" />
-    <state width="1567" height="288" key="GridCell.Tab.0.right" timestamp="1589719346890">
+    <state width="1567" height="317" key="GridCell.Tab.0.right" timestamp="1589720491713">
       <screen x="71" y="23" width="1609" height="1027" />
     </state>
-    <state width="1567" height="288" key="GridCell.Tab.0.right/1680.23.1920.1057/71.23.1609.1027@71.23.1609.1027" timestamp="1589719346890" />
+    <state width="1567" height="317" key="GridCell.Tab.0.right/1680.23.1920.1057/71.23.1609.1027@71.23.1609.1027" timestamp="1589720491713" />
     <state width="1567" height="408" key="GridCell.Tab.0.right/71.23.1609.1027@71.23.1609.1027" timestamp="1589705237111" />
-    <state x="475" y="276" key="Vcs.Push.Dialog.v2" timestamp="1589718359313">
+    <state x="475" y="276" key="Vcs.Push.Dialog.v2" timestamp="1589719631406">
       <screen x="71" y="23" width="1609" height="1027" />
     </state>
-    <state x="475" y="276" key="Vcs.Push.Dialog.v2/1680.23.1920.1057/71.23.1609.1027@71.23.1609.1027" timestamp="1589718359313" />
+    <state x="475" y="276" key="Vcs.Push.Dialog.v2/1680.23.1920.1057/71.23.1609.1027@71.23.1609.1027" timestamp="1589719631406" />
     <state x="475" y="276" key="Vcs.Push.Dialog.v2/71.23.1609.1027@71.23.1609.1027" timestamp="1589705320438" />
     <state x="537" y="353" key="com.intellij.testIntegration.createTest.CreateTestDialog" timestamp="1589704898019">
       <screen x="71" y="23" width="1609" height="1027" />
