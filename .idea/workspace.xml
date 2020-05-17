@@ -2,15 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4a391036-9702-4c76-b700-36016945f8c4" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/guru/springframework/msscbeerservice/services/inventory/BeerInventoryService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/guru/springframework/msscbeerservice/services/inventory/BeerInventoryServiceRestTemplateImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/guru/springframework/msscbeerservice/services/inventory/model/BeerInventoryDto.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/guru/springframework/msscbeerservice/web/mappers/BeerMapperDecorator.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/guru/springframework/msscbeerservice/services/inventory/BeerInventoryServiceRestTemplateImplTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/guru/springframework/msscbeerservice/repositories/BeerRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/guru/springframework/msscbeerservice/repositories/BeerRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/guru/springframework/msscbeerservice/services/BeerService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/guru/springframework/msscbeerservice/services/BeerService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/guru/springframework/msscbeerservice/services/BeerServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/guru/springframework/msscbeerservice/services/BeerServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/guru/springframework/msscbeerservice/web/controller/BeerController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/guru/springframework/msscbeerservice/web/controller/BeerController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/guru/springframework/msscbeerservice/web/mappers/BeerMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/guru/springframework/msscbeerservice/web/mappers/BeerMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/guru/springframework/msscbeerservice/web/mappers/BeerMapperDecorator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/guru/springframework/msscbeerservice/web/mappers/BeerMapperDecorator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/guru/springframework/msscbeerservice/web/controller/BeerControllerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/guru/springframework/msscbeerservice/web/controller/BeerControllerTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -56,7 +54,7 @@
       <recent name="guru.springframework.msscbeerservice.services.inventory" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.BeerInventoryServiceRestTemplateImplTest.getOnHandInventory">
+  <component name="RunManager" selected="JUnit.BeerControllerTest.getBeerById">
     <configuration name="MsscBeerServiceApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="guru.springframework.msscbeerservice.MsscBeerServiceApplication" />
       <module name="mssc-beer-service" />
@@ -66,6 +64,37 @@
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="BeerControllerTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="mssc-beer-service" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="guru.springframework.msscbeerservice.web.controller.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="guru.springframework.msscbeerservice.web.controller" />
+      <option name="MAIN_CLASS_NAME" value="guru.springframework.msscbeerservice.web.controller.BeerControllerTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="BeerControllerTest.getBeerById" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="mssc-beer-service" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="guru.springframework.msscbeerservice.web.controller.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="guru.springframework.msscbeerservice.web.controller" />
+      <option name="MAIN_CLASS_NAME" value="guru.springframework.msscbeerservice.web.controller.BeerControllerTest" />
+      <option name="METHOD_NAME" value="getBeerById" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -88,6 +117,8 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.BeerControllerTest.getBeerById" />
+        <item itemvalue="JUnit.BeerControllerTest" />
         <item itemvalue="JUnit.BeerInventoryServiceRestTemplateImplTest.getOnHandInventory" />
         <item itemvalue="Application.MsscBeerServiceApplication" />
       </list>
@@ -125,47 +156,77 @@
       <option name="project" value="LOCAL" />
       <updated>1589704466292</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="comn with inventory service to get qty on hand">
+      <created>1589705285505</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1589705285505</updated>
+    </task>
+    <task id="LOCAL-00005" summary="fix git ignore">
+      <created>1589705318779</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1589705318779</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="init repo" />
     <MESSAGE value="init data with data.sql" />
     <MESSAGE value="beer list api" />
-    <option name="LAST_COMMIT_MESSAGE" value="beer list api" />
+    <MESSAGE value="comn with inventory service to get qty on hand" />
+    <MESSAGE value="fix git ignore" />
+    <option name="LAST_COMMIT_MESSAGE" value="fix git ignore" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="688" y="250" key="#com.intellij.ide.util.MemberChooser" timestamp="1589704543715">
+    <state x="688" y="250" key="#com.intellij.ide.util.MemberChooser" timestamp="1589717533120">
       <screen x="71" y="23" width="1609" height="1027" />
     </state>
-    <state x="688" y="250" key="#com.intellij.ide.util.MemberChooser/1680.23.1920.1057/71.23.1609.1027@71.23.1609.1027" timestamp="1589704543715" />
-    <state x="416" y="132" key="CommitChangelistDialog2" timestamp="1589704466159">
+    <state x="688" y="250" key="#com.intellij.ide.util.MemberChooser/1680.23.1920.1057/71.23.1609.1027@71.23.1609.1027" timestamp="1589717533120" />
+    <state x="389" y="23" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1589718031371">
+      <screen x="71" y="23" width="1609" height="1027" />
+    </state>
+    <state x="389" y="23" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/1680.23.1920.1057/71.23.1609.1027@71.23.1609.1027" timestamp="1589718031371" />
+    <state x="416" y="132" key="CommitChangelistDialog2" timestamp="1589705318683">
       <screen x="71" y="23" width="1609" height="1027" />
     </state>
     <state x="416" y="132" key="CommitChangelistDialog2/1680.23.1920.1057/71.23.1609.1027@71.23.1609.1027" timestamp="1589704466159" />
-    <state width="1567" height="280" key="GridCell.Tab.0.bottom" timestamp="1589701946013">
+    <state x="416" y="132" key="CommitChangelistDialog2/71.23.1609.1027@71.23.1609.1027" timestamp="1589705318683" />
+    <state width="1567" height="288" key="GridCell.Tab.0.bottom" timestamp="1589717984633">
       <screen x="71" y="23" width="1609" height="1027" />
     </state>
-    <state width="1567" height="280" key="GridCell.Tab.0.bottom/1680.23.1920.1057/71.23.1609.1027@71.23.1609.1027" timestamp="1589701946013" />
-    <state width="1567" height="280" key="GridCell.Tab.0.center" timestamp="1589701946013">
+    <state width="1567" height="288" key="GridCell.Tab.0.bottom/1680.23.1920.1057/71.23.1609.1027@71.23.1609.1027" timestamp="1589717984633" />
+    <state width="1567" height="408" key="GridCell.Tab.0.bottom/71.23.1609.1027@71.23.1609.1027" timestamp="1589705237112" />
+    <state width="1567" height="288" key="GridCell.Tab.0.center" timestamp="1589717984632">
       <screen x="71" y="23" width="1609" height="1027" />
     </state>
-    <state width="1567" height="280" key="GridCell.Tab.0.center/1680.23.1920.1057/71.23.1609.1027@71.23.1609.1027" timestamp="1589701946013" />
-    <state width="1567" height="280" key="GridCell.Tab.0.left" timestamp="1589701946012">
+    <state width="1567" height="288" key="GridCell.Tab.0.center/1680.23.1920.1057/71.23.1609.1027@71.23.1609.1027" timestamp="1589717984632" />
+    <state width="1567" height="408" key="GridCell.Tab.0.center/71.23.1609.1027@71.23.1609.1027" timestamp="1589705237111" />
+    <state width="1567" height="288" key="GridCell.Tab.0.left" timestamp="1589717984632">
       <screen x="71" y="23" width="1609" height="1027" />
     </state>
-    <state width="1567" height="280" key="GridCell.Tab.0.left/1680.23.1920.1057/71.23.1609.1027@71.23.1609.1027" timestamp="1589701946012" />
-    <state width="1567" height="280" key="GridCell.Tab.0.right" timestamp="1589701946013">
+    <state width="1567" height="288" key="GridCell.Tab.0.left/1680.23.1920.1057/71.23.1609.1027@71.23.1609.1027" timestamp="1589717984632" />
+    <state width="1567" height="408" key="GridCell.Tab.0.left/71.23.1609.1027@71.23.1609.1027" timestamp="1589705237111" />
+    <state width="1567" height="288" key="GridCell.Tab.0.right" timestamp="1589717984633">
       <screen x="71" y="23" width="1609" height="1027" />
     </state>
-    <state width="1567" height="280" key="GridCell.Tab.0.right/1680.23.1920.1057/71.23.1609.1027@71.23.1609.1027" timestamp="1589701946013" />
-    <state x="475" y="276" key="Vcs.Push.Dialog.v2" timestamp="1589704467746">
+    <state width="1567" height="288" key="GridCell.Tab.0.right/1680.23.1920.1057/71.23.1609.1027@71.23.1609.1027" timestamp="1589717984633" />
+    <state width="1567" height="408" key="GridCell.Tab.0.right/71.23.1609.1027@71.23.1609.1027" timestamp="1589705237111" />
+    <state x="475" y="276" key="Vcs.Push.Dialog.v2" timestamp="1589705320438">
       <screen x="71" y="23" width="1609" height="1027" />
     </state>
     <state x="475" y="276" key="Vcs.Push.Dialog.v2/1680.23.1920.1057/71.23.1609.1027@71.23.1609.1027" timestamp="1589704467746" />
+    <state x="475" y="276" key="Vcs.Push.Dialog.v2/71.23.1609.1027@71.23.1609.1027" timestamp="1589705320438" />
     <state x="537" y="353" key="com.intellij.testIntegration.createTest.CreateTestDialog" timestamp="1589704898019">
       <screen x="71" y="23" width="1609" height="1027" />
     </state>
     <state x="537" y="353" key="com.intellij.testIntegration.createTest.CreateTestDialog/1680.23.1920.1057/71.23.1609.1027@71.23.1609.1027" timestamp="1589704898019" />
+    <state x="610" y="319" key="refactoring.ChangeSignatureDialog" timestamp="1589717428223">
+      <screen x="71" y="23" width="1609" height="1027" />
+    </state>
+    <state x="610" y="319" key="refactoring.ChangeSignatureDialog/1680.23.1920.1057/71.23.1609.1027@71.23.1609.1027" timestamp="1589717428223" />
   </component>
 </project>
