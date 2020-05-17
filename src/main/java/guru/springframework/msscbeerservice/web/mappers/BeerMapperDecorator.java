@@ -38,4 +38,10 @@ public abstract class BeerMapperDecorator implements BeerMapper {
     public void setBeerMapper(BeerMapper beerMapper) {
         this.beerMapper = beerMapper;
     }
+
+    //to inject service
+    @Autowired
+    public void setBeerInventoryService(BeerInventoryService beerInventoryService) {
+        this.beerInventoryService = beerInventoryService;
+    }
 }
