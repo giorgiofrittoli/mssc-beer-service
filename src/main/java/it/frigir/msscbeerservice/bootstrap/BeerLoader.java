@@ -2,6 +2,7 @@ package it.frigir.msscbeerservice.bootstrap;
 
 import it.frigir.msscbeerservice.domain.Beer;
 import it.frigir.msscbeerservice.repositories.BeerRepository;
+import lombok.extern.slf4j.Slf4j;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.stereotype.Component;
 
@@ -10,6 +11,8 @@ import java.math.BigDecimal;
 /**
  * Created by jt on 2019-05-17.
  */
+
+@Slf4j
 @Component
 public class BeerLoader implements CommandLineRunner {
 
@@ -29,7 +32,12 @@ public class BeerLoader implements CommandLineRunner {
     }
 
     private void loadBeerObjects() {
+
+        log.debug("Checking init beers - START");
+
         if (beerRepository.count() == 0) {
+
+            log.debug("Loading init beers");
 
             beerRepository.save(Beer.builder()
                     .beerName("Mango Bobs")
@@ -58,5 +66,8 @@ public class BeerLoader implements CommandLineRunner {
                     .price(new BigDecimal("11.95"))
                     .build());
         }
+
+        log.debug("Checking init beers - END");
+
     }
 }
