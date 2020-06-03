@@ -2,7 +2,7 @@ package it.frigir.msscbeerservice.services.brewing;
 
 import it.frigir.msscbeerservice.config.JmsConfig;
 import it.frigir.msscbeerservice.domain.Beer;
-import it.frigir.msscbeerservice.events.BrewBeerEvent;
+import it.frigir.common.events.BrewBeerEvent;
 import it.frigir.msscbeerservice.repositories.BeerRepository;
 import it.frigir.msscbeerservice.services.inventory.BeerInventoryService;
 import it.frigir.msscbeerservice.web.mappers.BeerMapper;

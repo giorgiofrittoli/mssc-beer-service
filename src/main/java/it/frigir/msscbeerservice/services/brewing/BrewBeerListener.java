@@ -2,8 +2,8 @@ package it.frigir.msscbeerservice.services.brewing;
 
 import it.frigir.msscbeerservice.config.JmsConfig;
 import it.frigir.msscbeerservice.domain.Beer;
-import it.frigir.msscbeerservice.events.BrewBeerEvent;
-import it.frigir.msscbeerservice.events.NewInventoryEvent;
+import it.frigir.common.events.BrewBeerEvent;
+import it.frigir.common.events.NewInventoryEvent;
 import it.frigir.msscbeerservice.repositories.BeerRepository;
 import it.frigir.msscbeerservice.web.model.BeerDto;
 import lombok.RequiredArgsConstructor;
@@ -11,6 +11,8 @@ import lombok.extern.slf4j.Slf4j;
 import org.springframework.jms.annotation.JmsListener;
 import org.springframework.jms.core.JmsTemplate;
 import org.springframework.stereotype.Service;
+
+import javax.transaction.Transactional;
 
 @Slf4j
 @Service
@@ -20,6 +22,7 @@ public class BrewBeerListener {
     private final BeerRepository beerRepository;
     private final JmsTemplate jmsTemplate;
 
+    @Transactional
     @JmsListener(destination = JmsConfig.BREWING_REQUEST_QUEUE)
     public void lister(BrewBeerEvent brewBeerEvent) {
         BeerDto beerDto = brewBeerEvent.getBeerDto();
