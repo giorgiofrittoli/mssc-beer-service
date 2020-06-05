@@ -3,7 +3,7 @@ package it.frigir.msscbeerservice.web.mappers;
 
 import it.frigir.msscbeerservice.domain.Beer;
 import it.frigir.msscbeerservice.services.inventory.BeerInventoryService;
-import it.frigir.msscbeerservice.web.model.BeerDto;
+import it.frigir.brewery.model.BeerDto;
 import org.springframework.beans.factory.annotation.Autowired;
 
 //decorate int beer mapper to add beer qty

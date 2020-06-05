@@ -1,4 +1,4 @@
-package it.frigir.msscbeerservice.web.model;
+package it.frigir.brewery.model;
 
 /**
  * Created by jt on 2019-05-12.

@@ -1,7 +1,7 @@
 package it.frigir.msscbeerservice.web.controller;
 
 import it.frigir.msscbeerservice.services.BeerService;
-import it.frigir.msscbeerservice.web.model.BeerDto;
+import it.frigir.brewery.model.BeerDto;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.http.HttpStatus;

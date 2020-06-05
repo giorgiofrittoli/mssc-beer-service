@@ -2,10 +2,10 @@ package it.frigir.msscbeerservice.services.brewing;
 
 import it.frigir.msscbeerservice.config.JmsConfig;
 import it.frigir.msscbeerservice.domain.Beer;
-import it.frigir.common.events.BrewBeerEvent;
-import it.frigir.common.events.NewInventoryEvent;
+import it.frigir.brewery.model.event.BrewBeerEvent;
+import it.frigir.brewery.model.event.NewInventoryEvent;
 import it.frigir.msscbeerservice.repositories.BeerRepository;
-import it.frigir.msscbeerservice.web.model.BeerDto;
+import it.frigir.brewery.model.BeerDto;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.jms.annotation.JmsListener;

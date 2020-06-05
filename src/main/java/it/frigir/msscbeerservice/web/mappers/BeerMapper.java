@@ -1,7 +1,7 @@
 package it.frigir.msscbeerservice.web.mappers;
 
 import it.frigir.msscbeerservice.domain.Beer;
-import it.frigir.msscbeerservice.web.model.BeerDto;
+import it.frigir.brewery.model.BeerDto;
 import org.mapstruct.DecoratedWith;
 import org.mapstruct.Mapper;
 

@@ -1,8 +1,8 @@
 package it.frigir.msscbeerservice.services;
 
-import it.frigir.msscbeerservice.web.model.BeerDto;
-import it.frigir.msscbeerservice.web.model.BeerPagedList;
-import it.frigir.msscbeerservice.web.model.BeerStyleEnum;
+import it.frigir.brewery.model.BeerDto;
+import it.frigir.brewery.model.BeerPagedList;
+import it.frigir.brewery.model.BeerStyleEnum;
 import org.springframework.data.domain.PageRequest;
 
 import java.util.UUID;
