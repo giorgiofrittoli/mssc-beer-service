@@ -1,4 +1,4 @@
-package it.frigir.msscbeerservice.services.inventory.model;
+package it.frigir.brewery.model;
 
 import lombok.AllArgsConstructor;
 import lombok.Builder;

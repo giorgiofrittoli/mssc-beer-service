@@ -1,6 +1,6 @@
 package it.frigir.msscbeerservice.services.inventory;
 
-import it.frigir.msscbeerservice.services.inventory.model.BeerInventoryDto;
+import it.frigir.brewery.model.BeerInventoryDto;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.boot.context.properties.ConfigurationProperties;
 import org.springframework.boot.web.client.RestTemplateBuilder;
