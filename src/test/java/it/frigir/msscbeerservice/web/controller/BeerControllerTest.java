@@ -1,10 +1,10 @@
 package it.frigir.msscbeerservice.web.controller;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
-import it.frigir.msscbeerservice.bootstrap.BeerLoader;
-import it.frigir.msscbeerservice.services.BeerService;
 import it.frigir.brewery.model.BeerDto;
 import it.frigir.brewery.model.BeerStyleEnum;
+import it.frigir.msscbeerservice.bootstrap.BeerLoader;
+import it.frigir.msscbeerservice.services.BeerService;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.autoconfigure.web.servlet.WebMvcTest;
@@ -72,7 +72,7 @@ class BeerControllerTest {
     BeerDto getValidBeerDto() {
         return BeerDto.builder()
                 .beerName("My Beer")
-                .beerStyle(BeerStyleEnum.ALE)
+                .beerStyle(BeerStyleEnum.ALE.toString())
                 .price(new BigDecimal("2.99"))
                 .upc(BeerLoader.BEER_1_UPC)
                 .build();
